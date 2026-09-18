@@ -144,3 +144,32 @@ def osszegzes(lista):
 
 print(osszegzes(szamok))
 print(sum(szamok))
+#add meg a számok átlagát
+szamok = [5, 5, 7]
+print(f"az átlag: {osszegzes(szamok)/len(szamok):.2f}")
+
+from statistics import mean
+print(mean(szamok))
+
+#megszámolás tétel
+#hány dara páros szám van a megadott számok között
+szamok = [5, 6, 7, 8]
+
+db = 0
+for szam in szamok:
+	if szam % 2 == 0:
+		db += 1
+
+print(f"a páros számok darab száma: {db}.")
+"""
+#gyakorló feladat add meg a páros számok átlagát
+szamok = [5, 6, 7, 8, 3 ,2 , 5, 4, 9]
+
+paros_osszeg = 0
+paros_db = 0
+for szam in szamok:
+    if szam % 2 == 0:
+		paros_osszeg += szam
+		paros_db += 1
+print(f"a páros számok átlaga: {paros_osszeg/paros_db:.2f}")
+"""
